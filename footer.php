@@ -1,7 +1,7 @@
 			<footer>
                 <div class="container">
                     <div class="row">
-                        <div class="footer-left col-sm-4">
+                        <div class="col-sm-4 footer-left text-center">
                             <?php dynamic_sidebar('footer-left'); ?>
                         </div>
                         <div class="footer-center text-center col-sm-<?php 
@@ -22,11 +22,11 @@
                             echo $main_column_size;?> ">
                             <?php dynamic_sidebar('footer-center'); ?> 
                         </div>
-                        <div class="footer-right text-right col-sm-4">
+                        <div class="footer-right text-center col-sm-4">
                             <?php dynamic_sidebar('footer-right'); ?> 
                         </div>
                     </div>
-                    <?php echo '<p class="text-center"><a href="http://graviti.code" target="_blank">&copy; graviti</a></p>'; ?>
+                    <?php echo '<p class="text-center"><a href="https://academyx.eu" target="_blank">&copy; Academyx.eu</a></p>'; ?>
                 </div>
 			</footer>
 		</div>

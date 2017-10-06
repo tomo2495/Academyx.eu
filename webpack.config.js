@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const NodemonPlugin = require( 'nodemon-webpack-plugin' );
 var glob = require("glob");
 
 module.exports = {
@@ -19,8 +20,8 @@ module.exports = {
   "window.Tether": "tether",
   'Popper': 'popper.js',
   "window.Popper": "popper.js",
-  'swiper': 'swiper.js',
-  "window.swiper": "swiper.js"
+  'Swiper': 'swiper.js',
+  "window.Swiper": "swiper.js"
 }),
   ]
 };

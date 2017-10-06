@@ -2,7 +2,7 @@ window.$ = window.jQuery = require('jquery');
 window.Tether = require('tether');
 require('popper.js/dist/umd/popper');
 require('bootstrap/dist/js/bootstrap');
-require('swiper');
+require('swiper/dist/js/swiper');
 
 //toggle the menu by click on toggle button
 var menuNavbarContainer = $("#menu-navbar");

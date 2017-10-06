@@ -26,9 +26,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-6 site-title">
-							<h1 class="site-title-heading">
-								<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
-							</h1>
+							<div class="site-title-heading">
+								<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php //bloginfo('name'); ?><img src="/wp-content/uploads/2017/03/academyx.png" alt="AcademyX logo" /></a>
+							</div>
 						</div>
 						<div class="col-6">
                             

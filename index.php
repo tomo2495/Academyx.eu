@@ -1,4 +1,9 @@
 <?php get_header();?>
+<style>
+body{
+	background:#f9f9f9;
+}
+</style>
             <main id="content">
             
                 <?php require get_template_directory() . '/inc/index-slider.php'; ?>
@@ -49,7 +54,7 @@
                             
                             <div class="divider transparent">&nbsp;</div>
                             
-                            <?php require get_template_directory() . '/inc/index-references.php'; ?>                          
+                            <?php require get_template_directory() . '/inc/index-references.php'; ?>
                             
 						</div>
                         <?php get_sidebar('right'); ?> 
