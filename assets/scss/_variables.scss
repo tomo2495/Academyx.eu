@@ -1,0 +1,70 @@
+/*Spacings (margins & paddings)*/
+$spacing-0: 0;
+$spacing-1: 0.25rem;
+$spacing-2: 0.5rem;
+$spacing-3: 1rem;
+$spacing-4: 1.5rem;
+$spacing-5: 3rem;
+
+
+/*body*/
+$font-size:$font-size-base;
+$font-family:$font-family-base;
+$line-height:$line-height-base;
+$border-radius:3px;
+$box-shadow:0px 1px 6px $box-shadow-color;
+
+/*fonts*/
+$font-awesome:FontAwesome;
+$font-open-sans:Open Sans;
+
+
+/*header*/
+$header-height: 72px;
+$header-logo-height: 56px;
+$header-logo-margin-top-bottom: 0.5rem;
+$header-button-header-padding:0.6rem 0.52rem;
+$header-navbar-space-between-submenu-and-toggle-button:72px;
+$header-search-padding:0.89rem 0;
+$header-submenu-nav-link-padding:$spacing-3;
+
+
+/*footer*/
+$footer-padding:$spacing-3 0;
+
+
+/*transitions*/
+$transition-time:.2s;
+$transition-type:ease;
+$transition: $transition-time $transition-type;
+
+
+/*icons*/
+$button-icon-font-size:1.5rem;
+$button-icon-line-height:1.25rem;
+
+
+/*Borders*/
+$border-width: 1px;
+$border-type: solid;
+$border:$border-width $border-type $border-color;
+$divider-height:1px;
+$divider-short-height:5px;
+$divider-short-width:100px;
+
+
+/*Forms*/
+$input-padding:0.70rem;
+
+
+/*Index - services section*/
+$services-hexagon-width:100px;
+$services-hexagon-height:100px;
+$services-hexagon-icon-font-size:3.5rem;
+$services-hexagon-icon-margin-top:0.97rem;
+$services-paragraph-height:9rem;
+$services-part-margin-bottom-mobile:3rem;
+
+/*Index - references section*/
+$references-logo-max-height:100px;
+$references-hover-effect:scale(1.1);

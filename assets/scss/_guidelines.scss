@@ -1,0 +1,410 @@
+/*Centering*/
+.center	{
+	text-align:center;
+}
+
+.text-center	{
+	text-align:center;
+}
+
+.text-left	{
+	text-align:left;
+}
+
+.text-right	{
+	text-align:right;
+}
+
+.text-justify	{
+	text-align:justify;
+}
+
+@media only screen and (max-width: 767px) {
+	.mobile-center {
+		text-align:center;
+	}
+}
+
+.underlined	{
+	text-decoration:underlined !important;
+}
+
+.no-underline	{
+	text-decoration:none !important;
+}
+
+
+/*Vertical centering - this class is just wrapper. you must make another child div and put the centering content to the child div of text-center-wrapper*/
+@media only screen and (min-width: 768px) {
+	.text-center-wrapper {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		min-height: 500px;
+		justify-content: center;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+		-ms-justify-content: center;
+		-o-justify-content: center;
+	}
+	
+	.text-center-wrapper .vertical-center-bottom {
+		align-self: flex-end;
+	}
+}
+
+/*Floating*/
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.float-none{
+	float:none;
+}
+
+/*Dividers*/
+.divider{
+	height:$divider-height;
+	background:$border-color;
+	margin:$spacing-4 0;
+}
+
+.divider.short{
+	width: $divider-short-width;
+    margin: $spacing-3 auto $spacing-4;
+    height: $divider-short-height;
+    background: $brand-primary;
+}
+
+.divider.gray{
+	background:$border-color;
+}
+
+.divider.transparent{
+	background:transparent;
+}
+
+.divider.black{
+	background:$color-black;
+}
+
+.divider.fluid {
+    width: calc(100vw);
+    margin-left: calc(-50vw + 50%);
+}
+
+.divider.gradient{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e7e7e7+0,ffffff+100&1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(231,231,231,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(231,231,231,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(231,231,231,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e7e7', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+background-repeat:repeat-x;
+height:5px;
+}
+
+
+/*Borders*/
+.no-border{
+	border:0;
+}
+
+.no-border-top{
+	border-top:0;
+}
+
+.no-border-left{
+	border-left:0;
+}
+
+.no-border-right{
+	border-right:0;
+}
+
+.no-border-bottom{
+	border-bottom:0;
+}
+
+.border{
+	border:$border;
+}
+
+.border-top{
+	border-top:$border;
+}
+
+.border-left{
+	border-left:$border;
+}
+
+.border-right{
+	border-right:$border;
+}
+
+.border-bottom{
+	border-bottom:$border;
+}
+
+
+/*Border-radius*/
+.no-border-radius{
+	border-radius:0;
+}
+
+.border-radius{
+	border-radius:$border-radius;
+}
+
+.border-top-left-radius{
+	border-top-left-radius:$border-radius;
+}
+
+.border-top-right-radius{
+	border-top-right-radius:$border-radius;
+}
+
+.border-bottom-left-radius{
+	border-bottom-left-radius:$border-radius;
+}
+
+.border-bottom-right-radius{
+	border-bottom-right-radius:$border-radius;
+}
+
+
+/*Colors*/
+.white{
+	color:$color-white;
+}
+
+.default{
+	color:$brand-default;
+}
+
+.black{
+	color:$color-black;
+}
+
+.price{
+	color:$brand-info;
+}
+
+.red{
+	color:$brand-danger;
+}
+
+.gray{
+	color:$brand-default;
+}
+
+
+/*Sizing*/
+.subheadline	{
+	font-size:18px;
+}
+
+.subtitle	{
+	font-size:16px;
+}
+
+/* Dropdown boxes */
+.dropdown-boxes {
+    margin-bottom:$spacing-5;
+}
+
+.dropdown-box {
+    border: $border;
+	border-bottom:$spacing-0;
+    background:$dropdown-box-bg;
+}
+
+.dropdown-box:first-child {
+    border-radius: $border-radius $border-radius $spacing-0 $spacing-0;
+}
+
+.dropdown-box:last-child {
+    border-radius: $spacing-0 $spacing-0 $border-radius $border-radius;
+	border-bottom: $border;
+}
+
+
+.dropdown-box .dropdown-title {
+    cursor: pointer;
+    padding: 15px 20px 15px 20px;
+    margin-bottom: $spacing-0;
+    margin-right: $spacing-0;
+    position: relative;
+    background:$dropdown-box-bg;
+}
+
+.dropdown-box .dropdown-title.opened, .dropdown-box .dropdown-title:hover {
+    background: $color-white !important;
+}
+
+.dropdown-box .dropdown-title .title {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+    color: $link-color;
+}
+
+.dropdown-box .dropdown-title:hover .title {
+    /*color: $link-hover-color !important;*/
+}
+
+.dropdown-box .dropdown-title p {
+    margin:$spacing-0;
+}
+
+.dropdown-box .box-content{
+    padding:1rem;
+	display:none;
+    background-color: $color-white;
+}
+
+.dropdown-box .chevron, .dropdown-box .dropdown-title .drop-btn, .dropdown-box .dropdown-title:after {
+    position: absolute;
+    right: 1rem;
+    top: 0.9rem;
+}
+
+.dropdown-box .dropdown-title:after{
+    font-family: FontAwesome;
+    content: "\f078";
+    font-size: 1.2rem;
+    color:$link-color;
+}
+
+.dropdown-box .dropdown-title:hover:after{
+    color:$link-hover-color;
+}
+
+.dropdown-box .dropdown-title.opened:after{
+    content: "\f077";
+}
+
+/*Chevrons - not needed, use font awesome*/
+.chevron,.chevron-circle{
+    display: inline-block;
+    font: normal normal normal 1rem/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color:$link-color;
+}
+
+.chevron-circle.right, .chevron-circle.left, .chevron.right, .chevron.left {
+    float: none;
+}
+
+.chevron-circle.right:before {
+    content: "\f138";
+}
+
+.chevron-circle.left:before {
+    content: "\f137";
+}
+
+.chevron-circle.bottom:before {
+    content: "\f13a";
+}
+
+.chevron-circle.top:before {
+    content: "\f139";
+}
+
+.chevron.right:before {
+    content: "\f054";
+}
+
+.chevron.left:before {
+    content: "\f053";
+}
+
+.chevron.bottom:before {
+    content: "\f078";
+}
+
+.chevron.top:before {
+    content: "\f077";
+}
+
+
+/*Anchors*/
+.more:before, .back:before{
+    padding-right:0.5rem;
+    font-family: FontAwesome;
+}
+
+.more:before {
+    content: "\f138";
+}
+
+.back:before{
+    content: "\f137";
+}
+
+
+/*Shadows*/
+.text-shadow	{
+	text-shadow:1px 1px 1px black;
+}
+
+.box-shadow	{
+	box-shadow:1px 1px 1px black;
+}
+
+
+.div-fluid{
+	width: calc(100vw);
+    margin-left: calc(-50vw + 50%);
+}
+
+.cover{
+    background-size: cover !important;
+}
+
+.visible-column	{
+	padding-top:20px;
+	padding-bottom:20px;
+	background: #d1edf7;
+    border: 1px solid rgba(86,61,124,0.2);
+	margin:15px 0;
+	text-align:center;
+}
+
+.html-viewer-box	{
+	background: #fbfbfb;
+    padding: 15px;
+    border: 1px solid #c1c1c1;
+}
+
+.html-viewer-box *	{
+	color:black;
+	font-size:16px;
+	font-family:Courier New;
+}
+
+.btn-white {
+    border: $border;
+}
+
+
+.footer-fixed{
+	position:fixed;
+	bottom:0;
+	width:100%;
+}
+
+img {
+    max-width: 100%;
+}

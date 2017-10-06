@@ -1,0 +1,112 @@
+.swiper-container {
+    width: 100%;
+    height: 350px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.swiper-slide .slide-content h2, .swiper-slide .slide-content p{
+    color:$color-white;
+    text-shadow: 0 3px 3px $color-black;
+}
+
+.swiper-container .button-prev, .swiper-container .button-next{
+    position:absolute;
+    top:40%;
+    font-size:3rem;
+    z-index:1;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.swiper-container .button-prev:hover, .swiper-container .button-next:hover{
+    color:rgba(255,255,255,1);
+}
+
+.swiper-container .button-prev{
+    left:$spacing-3;
+}
+
+.swiper-container .button-next{
+    right:$spacing-3;
+}
+
+.media_image {
+    text-align: center;
+    margin-bottom: $spacing-3;
+}
+
+.media_image img {
+    max-height: $references-logo-max-height;
+	transition: $transition;
+}
+
+.media_image img:hover {
+    z-index: 2;
+    transition: $transition;
+    -webkit-transform:$references-hover-effect;
+    -ms-transform: $references-hover-effect;
+    -moz-transform: $references-hover-effect;
+    transform: $references-hover-effect;
+}
+
+.hexagon-box{
+	margin: 0 auto;
+    border-radius: 100%;
+    border: 6px $border-type $border-color;
+    width: $services-hexagon-width;
+    height: $services-hexagon-height;
+    text-align: center;
+	transition: $transition;
+}
+
+.services .part:hover .hexagon-box{
+    border-color:$brand-primary;
+	transition: $transition;
+}
+
+.hexagon-box i {
+    font-size: $services-hexagon-icon-font-size;
+    margin-top: $services-hexagon-icon-margin-top;
+	color: $color-black;
+}
+
+.services .part:hover .hexagon-box i {
+    color: $color-black;
+}
+
+.services h2 > a{
+	color:$color-black;
+}
+
+.services .part:hover .services h2 > a{
+	color:$color-black;
+}
+
+.services .part p.text-justify{
+	height:$services-paragraph-height;
+}
+
+@media screen and (max-width: 767px) {
+	.part {
+		margin-bottom: $services-part-margin-bottom-mobile;
+	}
+}

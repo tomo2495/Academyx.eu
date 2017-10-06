@@ -1,0 +1,19 @@
+footer{
+	background-color: $footer-bg-color;
+    border-top:$border;
+    padding: $footer-padding;
+}
+
+.footer-fixed{
+	position:fixed;
+	width:100%;
+	bottom:0;
+}
+
+footer a{
+    color:$footer-link-color;
+}
+
+footer .widget{
+    background: $footer-color-widget-bg;
+}

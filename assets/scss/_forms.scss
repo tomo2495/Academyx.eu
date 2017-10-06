@@ -1,0 +1,14 @@
+.form-control{
+    padding:$input-padding;
+}
+
+button.form-control:focus,input[type="submit"].form-control:focus{
+    color:$color-white;
+}
+
+button, button > .fa{
+    border:0;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    cursor:pointer;
+}

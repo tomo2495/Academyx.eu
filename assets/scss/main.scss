@@ -1,0 +1,79 @@
+/*@import "node_modules/tether/dist/css/tether.min.css";*/
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+@import "node_modules/swiper/dist/css/swiper.min.scss";
+/*@import "_colors.scss";*/
+@import "_colors-academyx.scss";
+@import "_variables.scss";
+@import "_guidelines.scss";
+@import "_bootstrap-custom.scss";
+@import "_header.scss";
+@import "_navigation.scss";
+@import "_forms.scss";
+@import "_search.scss";
+@import "_index.scss";
+@import "_custom-login.scss";
+
+
+body {
+    background:$body-bg;
+	font-family:$font-family;
+	font-size:$font-size;
+    overflow-x:hidden;
+    line-height:$line-height;
+}
+
+main#content{
+    margin-bottom:$spacing-3;
+}
+
+main#content .widget{
+    background: $color-white;
+}
+
+a{
+    color:$link-color;
+}
+
+a:hover,a:focus{
+    color:$link-hover-color;
+    text-decoration:none;
+}
+
+p:empty{
+	margin:0;
+}
+
+.right{
+	float:right;
+}
+
+.left{
+	float:left;
+}
+
+.widget, .post, #loginform, #registerform, #lostpasswordform, #resetpassform{
+    padding: $spacing-3;
+    box-shadow: $box-shadow;
+    margin-bottom: $spacing-3;
+    background-color:$color-white;
+    border-radius:$border-radius;
+}
+
+h3.widget-title {
+    margin-bottom: $spacing-4;
+}
+
+#wp-calendar{
+    width:100%;
+}
+
+.divider-with-icon .icon-chevron {
+    background-color:$divider-with-icon-color;
+}
+
+.banner-text-center{
+	text-align:center;
+}
+
+@import "_footer.scss";

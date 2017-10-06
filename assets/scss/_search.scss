@@ -1,0 +1,104 @@
+.search-wrapper{
+    position:relative;
+    margin: 0;
+}
+
+.search-input-wrapper{
+    position:absolute;
+    right:0;
+}
+
+.search-wrapper > .search-input-wrapper > .search-input {
+    width: 2.5rem;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    outline:none;
+    color: $color-white;
+    z-index:1;
+    position:absolute;
+    right:0;
+}
+
+.search-wrapper > .search-input-wrapper > .search-input::-webkit-input-placeholder {
+    color: transparent;
+}
+.search-wrapper > .search-input-wrapper > .search-input::-moz-placeholder {
+    color: transparent;
+}
+.search-wrapper > .search-input-wrapper > .search-input:-ms-input-placeholder {
+    color: transparent;
+}
+.search-wrapper > .search-input-wrapper > .search-input:-moz-placeholder {
+    color: transparent;
+}
+
+.search-wrapper > .focus .search-input::-webkit-input-placeholder {
+    color: #ddd;
+}
+.search-wrapper > .focus .search-input::-moz-placeholder {
+    color: #ddd;
+}
+.search-wrapper > .focus .search-input:-ms-input-placeholder {
+    color: #ddd;
+}
+.search-wrapper > .focus .search-input:-moz-placeholder {
+    color: #ddd;
+}           
+
+.search-wrapper > .search-input-wrapper.focus{
+    width:250px;
+}
+
+.search-wrapper > .search-input-wrapper.focus .search-input {
+    width: 250px;
+    background-color: $color-white;
+    border-color: $brand-primary;
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+    color: #333;
+}
+
+.search-wrapper > i{
+    position:absolute;
+    padding:0.7rem;
+    font-size:1rem;
+    line-height:1.25rem;
+    right: 2px;
+    top: 1px;
+    
+}
+
+.search-wrapper > .search-input-wrapper > .search-button{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    padding: 0.67rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    /*display: none;*/
+    background: $brand-secondary;
+    width: 2.5rem;
+    border: 0;
+    border-left: 1px solid #ddd;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    z-index:1;
+}
+
+.btn-submit-search{
+    width: 2.5rem;
+    position: absolute;
+    top: 1px;
+    border: 0;
+    right: 1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+@media screen and (max-width: 479px) {
+   .search-wrapper > .search-input-wrapper{
+        top:58px;
+    }
+}
