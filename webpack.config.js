@@ -1,14 +1,14 @@
 const path = require('path');
 const webpack = require('webpack');
-const NodemonPlugin = require( 'nodemon-webpack-plugin' );
 var glob = require("glob");
 
 module.exports = {
   entry: {
-    js: glob.sync("./assets/js/**/*.js"),  
+    app: glob.sync("./assets/js/js/**/*.js"),
+    libs: glob.sync("./assets/js/libs/**/*.js"),
   },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, './public/js')
   },
   plugins: [
@@ -19,9 +19,7 @@ module.exports = {
   Tether: "tether",
   "window.Tether": "tether",
   'Popper': 'popper.js',
-  "window.Popper": "popper.js",
-  'Swiper': 'swiper.js',
-  "window.Swiper": "swiper.js"
+  "window.Popper": "popper.js"
 }),
   ]
 };

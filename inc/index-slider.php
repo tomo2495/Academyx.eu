@@ -30,3 +30,19 @@
     <div class="button-prev fa fa-chevron-left"></div>
     <div class="button-next fa fa-chevron-right"></div>
 </div>
+<script>
+//initialize swiper
+var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    lazyLoading: true,
+    grabCursor: true,
+    autoplay: 5000,
+    loop: true,
+    speed:1000,
+    autoplayDisableOnInteraction: false,
+    effect: 'fade',
+    prevButton: '.button-prev',
+    nextButton: '.button-next',
+});
+</script>
