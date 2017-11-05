@@ -5,6 +5,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/scss/print.css" type="text/css" media="print" />
+<meta property="og:type" content="website" />
+    <meta property="og:title" content="Academy X | školenia a predaj softvéru pre 2D a 3D grafiku" />
+    <meta property="og:description" content="Podpora architektov, grafikov, dizajnérov. Ponúkame hardvér, softvér a školenia zamerané na prácu s technológiami pre dizajn, architektúru a 3D tlač." />
+    <meta property="og:url" content="https://academyx.eu" />
+    <meta property="og:site_name" content="Academy X | školenia a predaj softvéru pre 2D a 3D grafiku" />
+    <meta property="og:image" content="https://www.academyx.eu/wp-content/uploads/2017/03/academyx.png" />
 
         <title> <?php wp_title('|', true,'right'); ?> <?php
                                 $options = get_option( 'theme_options' );
