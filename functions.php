@@ -46,8 +46,7 @@ add_action('after_body', 'add_google_tag2');
 function add_google_tag2() { ?>
 <!-- Google Tag Manager -->
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX8ZDKL"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
 <!-- End Google Tag Manager (noscript) -->
 <?php }
 
@@ -66,9 +65,7 @@ function add_fb_pixel() { ?>
   fbq('init', '287977948354379');
   fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=287977948354379&ev=PageView&noscript=1"
-/></noscript>
+
 <!-- End Facebook Pixel Code -->
 <?php }
 
