@@ -4,14 +4,7 @@
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="<?php
-                                $options = get_option( 'theme_options' );
-                                echo $options['meta_description'];
-                            ?>" />
-        <meta name="keywords" content="<?php
-                                $options = get_option( 'theme_options' );
-                                echo $options['meta_keywords'];
-                            ?>" />
+       <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/scss/print.css" type="text/css" media="print" />
 
         <title> <?php wp_title('|', true,'right'); ?> <?php
                                 $options = get_option( 'theme_options' );
